@@ -12,7 +12,7 @@
  * Usare con cautela in progetti che includono altre librerie che usano lo stesso simbolo.
  */
 
-function $(selettore) {
+export function $(selettore) {
     return document.querySelector(selettore);
 }
 

@@ -11,7 +11,7 @@
  * - Creare interfacce più moderne e professionali
  */
 
-function fadeIn(el, durata = 2000) {
+export function fadeIn(el, durata = 2000) {
     el.style.opacity = 0;
     el.style.transition = `opacity ${durata}ms ease`;
     requestAnimationFrame(() => el.style.opacity = 1);

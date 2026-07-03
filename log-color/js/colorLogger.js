@@ -11,7 +11,7 @@
  * - Creazione di librerie con messaggi di debug formattati
  */
 
-function logColor(msg, colore = "cyan") {
+export function logColor(msg, colore = "cyan") {
     console.log(`%c${msg}`, `color: ${colore}; font-weight: bold;`);
 }
 

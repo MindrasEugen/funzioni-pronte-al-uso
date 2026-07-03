@@ -10,7 +10,7 @@
  * - Sviluppo di single-page applications
  */
 
-function crea(tag, classe = "", testo = "") {
+export function crea(tag, classe = "", testo = "") {
     const el = document.createElement(tag);
     if (classe) el.className = classe;
     if (testo) el.textContent = testo;

@@ -4,7 +4,7 @@
  * Utilizzato per creare effetti visivi dinamici su pagine web.
  */
 
-function cambiaColore(elemento) {
+export function cambiaColore(elemento) {
     const colore = `rgb(
         ${Math.floor(Math.random() * 256)},
         ${Math.floor(Math.random() * 256)},
@@ -49,7 +49,7 @@ function cambiaColore(elemento) {
 // 2. cambiaTesto: cambia il colore del testo con colori casuali
 // basta richiamare la funzione sul elemento desiderato : funzione(document.elemento)
 
-function coloreCasuale() {
+export function coloreCasuale() {
     return `rgb(
         ${Math.floor(Math.random() * 256)},
         ${Math.floor(Math.random() * 256)},
@@ -57,11 +57,11 @@ function coloreCasuale() {
     )`;
 }
 
-function cambiaSfondo(elemento) {
+export function cambiaSfondo(elemento) {
     elemento.style.backgroundColor = coloreCasuale();
 }
 
-function cambiaTesto(elemento) {
+export function cambiaTesto(elemento) {
     elemento.style.color = coloreCasuale();
 }
 

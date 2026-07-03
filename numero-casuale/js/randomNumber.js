@@ -9,7 +9,7 @@
  * - Test e debug con valori variabili
  */
 
-function numeroCasuale(min = 0, max = 100) {
+export function numeroCasuale(min = 0, max = 100) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 

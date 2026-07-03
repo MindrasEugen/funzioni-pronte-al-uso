@@ -11,7 +11,7 @@
  * - Mantenere coerenza nello stile di codifica
  */
 
-function on(elemento, evento, callback) {
+export function on(elemento, evento, callback) {
     elemento.addEventListener(evento, callback);
 }
 
