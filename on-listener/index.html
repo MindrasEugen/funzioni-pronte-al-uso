@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Listener - Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>On Listener</h1>
+    
+    <div class="container">
+        <p>Questa pagina dimostra la funzione <code>on(elemento, evento, callback)</code>.</p>
+        <p>Clicca il bottone per cambiare il colore del riquadro sottostante.</p>
+        
+        <button id="btn">Cliccami!</button>
+        
+        <div id="target" class="target">Clicca il bottone per cambiare il mio colore</div>
+        
+        <p class="instructions">Nel codice, invece di <code>elemento.addEventListener()</code>, usiamo <code>on(elemento, evento, callback)</code>.</p>
+    </div>
+
+    <script src="js/eventListener.js"></script>
+</body>
+</html>
