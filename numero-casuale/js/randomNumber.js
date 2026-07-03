@@ -13,10 +13,11 @@ function numeroCasuale(min = 0, max = 100) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// DEMO - Commentate per uso tramite CDN
 // Demo: aggiorna il titolo con un numero casuale tra 1 e 100 ogni secondo
-setInterval(() => {
-    document.querySelector("h1").textContent = numeroCasuale(1, 100);
-}, 1000);
+// setInterval(() => {
+//     document.querySelector("h1").textContent = numeroCasuale(1, 100);
+// }, 1000);
 
 /**
  * Dettagli implementativi:

@@ -16,15 +16,16 @@ function $(selettore) {
     return document.querySelector(selettore);
 }
 
+// DEMO - Commentate per uso tramite CDN
 // Demo: cambia il colore del titolo ogni secondo usando lo shortcut $
-setInterval(() => {
-    const titolo = $("h1");
-    titolo.style.color = `rgb(
-        ${Math.floor(Math.random() * 256)},
-        ${Math.floor(Math.random() * 256)},
-        ${Math.floor(Math.random() * 256)}
-    )`;
-}, 1000);
+// setInterval(() => {
+//     const titolo = $("h1");
+//     titolo.style.color = `rgb(
+//         ${Math.floor(Math.random() * 256)},
+//         ${Math.floor(Math.random() * 256)},
+//         ${Math.floor(Math.random() * 256)}
+//     )`;
+// }, 1000);
 
 
 /**

@@ -118,7 +118,12 @@ Copia il file JavaScript dalla cartella `js/` della funzione desiderata nel tuo 
 
 ### 🌐 Usare la libreria completa via CDN
 
-Al momento il CDN non è disponibile. Per utilizzare le funzioni, segui le istruzioni di integrazione individuale descritte sopra.
+Puoi importare tutte le funzioni direttamente via CDN usando il seguente comando:
+```javascript
+import * as utils from "https://cdn.jsdelivr.net/gh/MindrasEugen/funzioni-pronte-al-uso/index.js";
+```
+
+Il CDN utilizzato è **jsDelivr**, che distribuisce automaticamente il file `index.js` dal repository GitHub [MindrasEugen/funzioni-pronte-al-uso](https://github.com/MindrasEugen/funzioni-pronte-al-uso).
 
 ## 📋 Panoramica Funzioni
 

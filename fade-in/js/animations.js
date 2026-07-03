@@ -17,33 +17,34 @@ function fadeIn(el, durata = 2000) {
     requestAnimationFrame(() => el.style.opacity = 1);
 }
 
+// DEMO - Commentate per uso tramite CDN
 // Demo: applica fadeIn a tutti i box con durate scalari
-document.addEventListener('DOMContentLoaded', () => {
-    const boxes = document.querySelectorAll('.box');
-
-    boxes.forEach((box, index) => {
-        // Aspetta un po' per ogni box per effetto a cascata
-        setTimeout(() => {
-            fadeIn(box, 200 + index * 200);
-        }, index * 200);
-    });
-
-    // Bottone reset
-    const resetBtn = document.getElementById('resetBtn');
-    resetBtn.addEventListener('click', () => {
-        boxes.forEach(box => {
-            box.style.opacity = 0;
-        });
-
-        setTimeout(() => {
-            boxes.forEach((box, index) => {
-                setTimeout(() => {
-                    fadeIn(box, 200 + index * 200);
-                }, index * 200);
-            });
-        }, 100);
-    });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     const boxes = document.querySelectorAll('.box');
+//
+//     boxes.forEach((box, index) => {
+//         // Aspetta un po' per ogni box per effetto a cascata
+//         setTimeout(() => {
+//             fadeIn(box, 200 + index * 200);
+//         }, index * 200);
+//     });
+//
+//     // Bottone reset
+//     const resetBtn = document.getElementById('resetBtn');
+//     resetBtn.addEventListener('click', () => {
+//         boxes.forEach(box => {
+//             box.style.opacity = 0;
+//         });
+//
+//         setTimeout(() => {
+//             boxes.forEach((box, index) => {
+//                 setTimeout(() => {
+//                     fadeIn(box, 200 + index * 200);
+//                 }, index * 200);
+//             });
+//         }, 100);
+//     });
+// });
 
 /**
  * Dettagli implementativi:

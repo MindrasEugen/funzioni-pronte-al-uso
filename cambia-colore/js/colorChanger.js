@@ -16,14 +16,15 @@ function cambiaColore(elemento) {
     // e sconsigliato usarle insieme nella stessa funzione perchè il risultato sarebbe un testo invisibile
 }
 
+// DEMO - Commentate per uso tramite CDN
 // Applica l'effetto al body e al titolo principale ogni secondo
-setInterval(() => {
-    cambiaColore(document.body);
-}, 1000);
-
-setInterval(() => {
-    cambiaColore(document.querySelector("h1"));
-}, 1000);
+// setInterval(() => {
+//     cambiaColore(document.body);
+// }, 1000);
+//
+// setInterval(() => {
+//     cambiaColore(document.querySelector("h1"));
+// }, 1000);
 
 
 /**
@@ -65,5 +66,6 @@ function cambiaTesto(elemento) {
 }
 
 
-cambiaSfondo(document.body);
-cambiaTesto(document.body);
+// DEMO - Commentate per uso tramite CDN
+// cambiaSfondo(document.body);
+// cambiaTesto(document.body);

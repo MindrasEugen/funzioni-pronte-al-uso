@@ -15,17 +15,18 @@ function on(elemento, evento, callback) {
     elemento.addEventListener(evento, callback);
 }
 
+// DEMO - Commentate per uso tramite CDN
 // Demo: cambia il colore del target quando si clicca il bottone
-const btn = document.getElementById("btn");
-const target = document.getElementById("target");
-
-on(btn, "click", () => {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-    target.textContent = `Colore: rgb(${r}, ${g}, ${b})`;
-});
+// const btn = document.getElementById("btn");
+// const target = document.getElementById("target");
+//
+// on(btn, "click", () => {
+//     const r = Math.floor(Math.random() * 256);
+//     const g = Math.floor(Math.random() * 256);
+//     const b = Math.floor(Math.random() * 256);
+//     target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+//     target.textContent = `Colore: rgb(${r}, ${g}, ${b})`;
+// });
 
 /**
  * Dettagli implementativi:

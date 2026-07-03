@@ -15,22 +15,23 @@ function logColor(msg, colore = "cyan") {
     console.log(`%c${msg}`, `color: ${colore}; font-weight: bold;`);
 }
 
+// DEMO - Commentate per uso tramite CDN
 // Demo: stampa esempi alla partenza
-console.log("%c=== Demo logColor ===", "color: #333; font-size: 16px; font-weight: bold;");
-logColor("Messaggio predefinito (cyan)");
-logColor("Messaggio di errore", "red");
-logColor("Messaggio di warning", "orange");
-logColor("Messaggio di successo", "green");
-logColor("Messaggio informativo", "blue");
-
+// console.log("%c=== Demo logColor ===", "color: #333; font-size: 16px; font-weight: bold;");
+// logColor("Messaggio predefinito (cyan)");
+// logColor("Messaggio di errore", "red");
+// logColor("Messaggio di warning", "orange");
+// logColor("Messaggio di successo", "green");
+// logColor("Messaggio informativo", "blue");
+//
 // Demo: bottone per testare altri colori
-const testBtn = document.getElementById("testBtn");
-testBtn.addEventListener("click", () => {
-    logColor("Test messaggio 1", "purple");
-    logColor("Test messaggio 2", "darkblue");
-    logColor("Test messaggio 3 - Bold Magenta", "magenta");
-    logColor("Test messaggio 4", "crimson");
-});
+// const testBtn = document.getElementById("testBtn");
+// testBtn.addEventListener("click", () => {
+//     logColor("Test messaggio 1", "purple");
+//     logColor("Test messaggio 2", "darkblue");
+//     logColor("Test messaggio 3 - Bold Magenta", "magenta");
+//     logColor("Test messaggio 4", "crimson");
+// });
 
 /**
  * Dettagli implementativi:
