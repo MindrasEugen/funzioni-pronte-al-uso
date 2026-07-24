@@ -62,6 +62,30 @@ funzioni salvate/
     │   └── styles.css        # Stili per la demo
     ├── index.html            # Demo interattiva
     └── README.md             # Documentazione dettagliata
+│
+├── debounce-throttle/
+│   ├── js/
+│   │   └── debounceThrottle.js # Ottimizzazione frequenza (debounce/throttle)
+│   ├── css/
+│   │   └── styles.css        # Stili per la demo
+│   ├── index.html            # Demo interattiva
+│   └── README.md             # Documentazione dettagliata
+│
+├── gestisci-storage/
+│   ├── js/
+│   │   └── storageHelper.js  # Wrapper sicuro per l'archivio locale
+│   ├── css/
+│   │   └── styles.css        # Stili per la demo
+│   ├── index.html            # Demo interattiva
+│   └── README.md             # Documentazione dettagliata
+│
+├── formato-data/
+│   ├── js/
+│   │   └── formatDate.js     # Formattazione date e tempo relativo
+│   ├── css/
+│   │   └── styles.css        # Stili per la demo
+│   ├── index.html            # Demo interattiva
+│   └── README.md             # Documentazione dettagliata
 ```
 
 ## 🎯 Elenco Funzioni
@@ -81,6 +105,15 @@ funzioni salvate/
 
 - **🖨️ [`logColor(msg, colore)`](log-color/README.md)** — Stampa un messaggio colorato nella console del browser
   [👉 Demo](log-color/index.html) · [📖 Doc](log-color/README.md)
+
+- **⏱️ [`debounce(fn, delay)`](debounce-throttle/README.md) / [`throttle(fn, limit)`](debounce-throttle/README.md)** — Ottimizzazione della frequenza di chiamata per funzioni ad alta frequenza
+  [👉 Demo](debounce-throttle/index.html) · [📖 Doc](debounce-throttle/README.md)
+
+- **💾 [`salvaInArchivio(chiave, valore)`](gestisci-storage/README.md) / [`recuperaDaArchivio(chiave, default)`](gestisci-storage/README.md)** — Interazione sicura e tipizzata con l'archivio locale
+  [👉 Demo](gestisci-storage/index.html) · [📖 Doc](gestisci-storage/README.md)
+
+- **📅 [`formattaData(data, stile)`](formato-data/README.md) / [`tempoRelativo(data)`](formato-data/README.md)** — Formattazione data localizzata e tempo trascorso colloquiale
+  [👉 Demo](formato-data/index.html) · [📖 Doc](formato-data/README.md)
 
 ---
 
@@ -175,6 +208,36 @@ Shortcut per `addEventListener()`.
 - **Parametri**: `elemento` (HTMLElement), `evento` (String), `callback` (Function)
 - **Demo**: Bottone interattivo che cambia colore
 - **Uso tipico**: Gestione eventi più leggibile
+
+### ⏱️ Performance e Controllo Flusso
+
+#### `debounce(fn, delay)`
+Ritarda l'esecuzione della funzione originale fino a quando non sono trascorsi `delay` millisecondi dall'ultima chiamata.
+- **Parametri**: `fn` (Function), `delay` (default: 300ms)
+- **Demo**: Input di testo con calcolo dinamico in tempo reale
+- **Uso tipico**: Autocomplete, chiamate API su digitazione
+
+#### `throttle(fn, limit)`
+Assicura che una funzione non venga eseguita più di una volta ogni `limit` millisecondi.
+- **Parametri**: `fn` (Function), `limit` (default: 300ms)
+- **Demo**: Bottone per simulare eventi ad alta frequenza
+- **Uso tipico**: Scroll listener, resize listener, prevenzione di click doppi
+
+### 💾 Persistenza Dati
+
+#### `salvaInArchivio(chiave, valore)` / `recuperaDaArchivio(chiave, valoreDefault)`
+Salva e recupera in sicurezza oggetti e array nell'archivio locale gestendo le eccezioni del browser e le restrizioni di privacy.
+- **Parametri**: `chiave` (String), `valore` (Any), `valoreDefault` (default: null)
+- **Demo**: Form interattivo per la gestione del profilo utente
+- **Uso tipico**: Salvataggio preferenze utente, carrello spesa temporaneo
+
+### 📅 Gestione Date e Tempo
+
+#### `formattaData(data, stile)` / `tempoRelativo(data)`
+Formatta date in italiano ed elabora il tempo trascorso colloquiale ("3 minuti fa", "ieri", etc.).
+- **Parametri**: `data` (Date|String|Number), `stile` ('breve', 'estesa', 'completa', 'ora')
+- **Demo**: Selettore data-time con anteprime in tempo reale
+- **Uso tipico**: Notifiche temporali, visualizzazione di timestamp colloquiali
 
 ## 💡 Combinare le Funzioni
 

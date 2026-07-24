@@ -1,5 +1,5 @@
 /**
- * Applica un effetto fade-in (dissolvenza in entrata) a un elemento DOM.
+ * Applica un effetto di dissolvenza in entrata a un elemento DOM.
  * 
  * Questa funzione crea un effetto di transizione fluida dove un elemento 
  * passa da invisibile (opacity: 0) a completamente visibile (opacity: 1).
@@ -11,7 +11,7 @@
  * - Creare interfacce più moderne e professionali
  */
 
-export function fadeIn(el, durata = 2000) {
+export function dissolvenza(el, durata = 2000) {
     el.style.opacity = 0;
     el.style.transition = `opacity ${durata}ms ease`;
     requestAnimationFrame(() => el.style.opacity = 1);
@@ -25,7 +25,7 @@ export function fadeIn(el, durata = 2000) {
 //     boxes.forEach((box, index) => {
 //         // Aspetta un po' per ogni box per effetto a cascata
 //         setTimeout(() => {
-//             fadeIn(box, 200 + index * 200);
+//             dissolvenza(box, 200 + index * 200);
 //         }, index * 200);
 //     });
 //
@@ -39,7 +39,7 @@ export function fadeIn(el, durata = 2000) {
 //         setTimeout(() => {
 //             boxes.forEach((box, index) => {
 //                 setTimeout(() => {
-//                     fadeIn(box, 200 + index * 200);
+//                     dissolvenza(box, 200 + index * 200);
 //                 }, index * 200);
 //             });
 //         }, 100);

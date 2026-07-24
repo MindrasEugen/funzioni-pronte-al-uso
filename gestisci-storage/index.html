@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe LocalStorage - Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Safe Storage Helper</h1>
+    <p class="subtitle">Interazione robusta con localStorage del browser per il salvataggio strutturato e la serializzazione dei dati.</p>
+
+    <div class="card">
+        <div class="form-group">
+            <label for="nameInput">Nome Utente</label>
+            <input type="text" id="nameInput" placeholder="Inserisci il tuo nome...">
+        </div>
+
+        <div class="form-group">
+            <label for="roleInput">Ruolo</label>
+            <select id="roleInput">
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="QA Engineer">QA Engineer</option>
+            </select>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-primary" id="saveBtn">Salva Profilo</button>
+            <button class="btn-danger" id="deleteBtn">Rimuovi Profilo</button>
+        </div>
+
+        <div class="status-panel">
+            <div class="status-title">Stato Attuale del Profilo (Recuperato)</div>
+            <div class="preview-badge" id="userDisplay">Nessun profilo salvato.</div>
+
+            <div class="status-title">Valore Grezzo in localStorage (Chiave: <code>demo_profilo_utente</code>)</div>
+            <div class="console-output" id="rawOutput">Storage vuoto (o chiave rimossa)</div>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <strong>Nota di funzionamento:</strong> Coerentemente con la struttura del progetto per l'uso tramite CDN, il codice di demo nel file <code>js/storageHelper.js</code> è commentato di default. Per vedere la demo interattiva all'opera su questa pagina, <strong>apri il file <code>js/storageHelper.js</code> e scommenta le righe della sezione DEMO</strong>. Le funzioni esportate si chiamano <code>salvaStorage()</code>, <code>recuperaStorage()</code>, <code>rimuoviStorage()</code> e <code>svuotaStorage()</code>.
+    </div>
+
+    <script src="js/storageHelper.js"></script>
+</body>
+
+</html>

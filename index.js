@@ -5,6 +5,9 @@ export * from "./crea-elemento/js/createElement.js";
 export * from "./on-listener/js/eventListener.js";
 export * from "./log-color/js/colorLogger.js";
 export * from "./fade-in/js/animations.js";
+export * from "./debounce-throttle/js/debounceThrottle.js";
+export * from "./gestisci-storage/js/storageHelper.js";
+export * from "./formato-data/js/formatDate.js";
 
 /* questo file serve come punto di ingresso principale e serve per exportare tutte le funzioni del progetto in un unica "libreria"
  funzionamento:

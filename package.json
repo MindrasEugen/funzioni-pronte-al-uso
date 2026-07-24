@@ -1,0 +1,31 @@
+{
+    "name": "funzioni-pronte-al-uso",
+    "version": "1.0.0",
+    "description": "Una raccolta di funzioni JavaScript utili per lo sviluppo web, ognuna con la propria struttura completa: codice, demo interattiva e documentazione dettagliata.",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test-run.mjs"
+    },
+    "keywords": [
+        "javascript",
+        "utilities",
+        "frontend",
+        "web-development",
+        "dom",
+        "storage",
+        "animation",
+        "date",
+        "helper"
+    ],
+    "author": "MindrasEugen",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MindrasEugen/funzioni-pronte-al-uso"
+    },
+    "bugs": {
+        "url": "https://github.com/MindrasEugen/funzioni-pronte-al-uso/issues"
+    },
+    "homepage": "https://github.com/MindrasEugen/funzioni-pronte-al-uso#readme"
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antirimbalzo & Limita - Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Antirimbalzo & Limita</h1>
+    <p class="subtitle">Ottimizzazione delle performance tramite limitazione della frequenza di esecuzione delle funzioni.</p>
+
+    <div class="container">
+        <!-- Debounce Card -->
+        <div class="card">
+            <h2>1. Antirimbalzo</h2>
+            <p>
+                L'antirimbalzo ritarda l'esecuzione di una funzione finché non è trascorso un tempo fisso dall'ultimo evento.
+                È perfetto per campi di input con completamento automatico (autocomplete), dove vuoi attendere che l'utente finisca di digitare prima di inviare una richiesta API.
+            </p>
+            <div class="demo-box">
+                <input type="text" id="inputDemo" placeholder="Digita qualcosa velocemente...">
+                <div class="live-output">
+                    Risultato: <span id="outputDebounce">(attesa input)</span>
+                </div>
+                <div class="live-stats" id="countInput">
+                    Eventi reali: 0 | Chiamate effettive (Antirimbalzo): 0
+                </div>
+            </div>
+        </div>
+
+        <!-- Throttle Card -->
+        <div class="card">
+            <h2>2. Limita</h2>
+            <p>
+                La funzione limita assicura che una funzione venga eseguita al massimo una volta ogni intervallo di tempo specificato.
+                È ideale per eventi frequenti come scroll, resize o click rapidi ripetuti su pulsanti, dove vuoi garantire aggiornamenti costanti ma regolati.
+            </p>
+            <div class="demo-box">
+                <button class="btn" id="btnDemo">Clicca ripetutamente!</button>
+                <div class="live-output">
+                    Stato: <span id="outputThrottle">(nessun click)</span>
+                </div>
+                <div class="live-stats" id="countClick">
+                    Click reali: 0 | Chiamate effettive (Limita): 0
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notice-box">
+        <strong>Nota di funzionamento:</strong> Coerentemente con la struttura del progetto per l'uso tramite CDN, il codice di demo nel file <code>js/debounceThrottle.js</code> è commentato di default. Per vedere la demo interattiva all'opera su questa pagina, <strong>apri il file <code>js/debounceThrottle.js</code> e scommenta le righe della sezione DEMO</strong>. Le funzioni esportate si chiamano <code>antirimbalzo()</code> e <code>limita()</code>.
+    </div>
+
+    <script src="js/debounceThrottle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formattazione Data & Tempo Relativo - Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Formato Data & Tempo Relativo</h1>
+    <p class="subtitle">Utility di formattazione temporale localizzata ed elaborazione del tempo relativo trascorso o futuro.</p>
+
+    <div class="card">
+        <div class="selector-section">
+            <label for="dateSelector">Seleziona una Data e Ora per il test</label>
+            <input type="datetime-local" id="dateSelector">
+        </div>
+
+        <div class="results-grid">
+            <div class="result-row">
+                <div class="result-label">Breve</div>
+                <div class="result-val" id="formatBreve">-</div>
+            </div>
+            <div class="result-row">
+                <div class="result-label">Estesa</div>
+                <div class="result-val" id="formatEsteso">-</div>
+            </div>
+            <div class="result-row">
+                <div class="result-label">Completa</div>
+                <div class="result-val" id="formatCompleto">-</div>
+            </div>
+            <div class="result-row">
+                <div class="result-label">Ora</div>
+                <div class="result-val" id="formatOra">-</div>
+            </div>
+        </div>
+
+        <div class="relative-banner">
+            <div class="relative-title">Tempo Relativo Calcolato</div>
+            <div class="relative-value" id="relativeText">-</div>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <strong>Nota di funzionamento:</strong> Coerentemente con la struttura del progetto per l'uso tramite CDN, il codice di demo nel file <code>js/formatDate.js</code> è commentato di default. Per vedere la demo interattiva all'opera su questa pagina, <strong>apri il file <code>js/formatDate.js</code> e scommenta le righe della sezione DEMO</strong>.
+    </div>
+
+    <script src="js/formatDate.js"></script>
+</body>
+
+</html>

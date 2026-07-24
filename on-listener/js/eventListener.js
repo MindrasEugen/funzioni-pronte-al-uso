@@ -1,5 +1,5 @@
 /**
- * Aggiunge un event listener a un elemento DOM in modo compatto.
+ * Aggiunge un listener agli eventi di un elemento DOM in modo compatto.
  * 
  * Questa funzione fornisce uno shortcut per addEventListener(), 
  * rendendo il codice più leggibile e riducendo la verbosità. 
@@ -11,7 +11,7 @@
  * - Mantenere coerenza nello stile di codifica
  */
 
-export function on(elemento, evento, callback) {
+export function ascolta(elemento, evento, callback) {
     elemento.addEventListener(evento, callback);
 }
 
@@ -20,7 +20,7 @@ export function on(elemento, evento, callback) {
 // const btn = document.getElementById("btn");
 // const target = document.getElementById("target");
 //
-// on(btn, "click", () => {
+// ascolta(btn, "click", () => {
 //     const r = Math.floor(Math.random() * 256);
 //     const g = Math.floor(Math.random() * 256);
 //     const b = Math.floor(Math.random() * 256);
@@ -36,7 +36,7 @@ export function on(elemento, evento, callback) {
  * - Non aggiunge gestione automatica di removeEventListener
  * 
  * Note:
- * - Il nome "on" è breve e intuitivo per l'aggiunta di listener
+ * - Il nome "ascolta" è descrittivo per l'aggiunta di listener agli eventi
  * - L'ordine dei parametri segue la convenzione: elemento, evento, callback
  * - Funziona con qualsiasi evento DOM standard (click, mouseover, keypress, ecc.)
  * - Per rimuovere un listener, usa il metodo nativo: elemento.removeEventListener()
